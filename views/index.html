@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller's Page</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <h1 class="heading">List the Products</h1>
+    <form  id='myform'  class="my-form" >
+        
+        <div class="inputs">
+            <label for="name">Product Name:</label><br>
+            <input type="text" id="name" size="30" name="name">
+        </div>
+        <div class="inputs">
+            <label for="price">Selling Price</label><br>
+            <input type="text" id="price" size="30" name="price">
+        </div>
+        <input type="hidden" id="productid" name="productid">
+        <div class="buttons">
+            <button type="submit" class="btn" id="submit">Submit</button>
+        </div>
+    
+    </form>
+    <h2>Products: </h2>
+    <ul id="plist" class="plist"></ul>
+
+    <div id = 'cost'>
+
+    <label for="">Total Value Worth of Products: Rs.</label>
+    <input type="text" value="0" id="tcost" disabled class="cost">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+
+</html>
